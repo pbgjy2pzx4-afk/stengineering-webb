@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ST Engineering AB</title>
+<script>
+const C = {
+  foretagsnamn:   "ST Engineering AB",
+  orgnr:          "556XXX-XXXX",
+  telefon:        "+46 72 464 48 04",
+  epost:          "info@stengineering.se",
+  adress:         "Lulevägen 24, Boden",
+  grundare_namn:  "David Stenberg",
+  grundare_titel: "Grundare & Senior elkraftsingenjör",
+  grundare_bild:  "david.jpg",
+
+  hero_badge: "Elkraft · Industri · Senior kompetens",
+  hero_rubrik: "Teknisk spetskompetens inom <span style='color:#4a9eca'>elkraft & industri</span>",
+  hero_text: "ST Engineering AB levererar senior konsultkompetens inom elkraftanläggningar från felsökning och utredningar till projektering och idrifttagning.",
+
+  stats: [
+    { num:"17 år",      label:"Branscherfarenhet" },
+    { num:"0,1–130 kV", label:"Spänningsnivåer" },
+    { num:"Norrbotten", label:"& övriga Sverige" },
+    { num:"Oberoende",  label:"Beställarstöd" },
+  ],
+
+  tjanster: [
+    {
+      titel: "Felsökning & felanalys",
+      kort: "Diagnos vid driftstörningar och rotorsaksanalys.",
+      detalj: "Vid driftstörningar i industriella el-anläggningar är tid kritisk. ST Engineering erbjuder snabb mobilisering och systematisk felsökning baserad på 17 års erfarenhet från vattenkraft, stålverk och processindustri. Uppdraget innefattar rotorsaksanalys, dokumenterade åtgärdsförslag och, om önskat, stöd vid genomförande. Målet är alltid att minimera produktionsbortfall och säkerställa att grundorsaken åtgärdas, inte bara symptomet."
+    },
+    {
+      titel: "Tekniska utredningar",
+      kort: "Statusbedömningar och utredningar med tydliga beslutsunderlag.",
+      detalj: "Vi genomför tekniska utredningar och statusbedömningar av el-anläggningar i industriell miljö. Uppdragen kan röra allt från bedömning av åldrande kontrollanläggning och ställverksapparatur till utredning av kapacitets- eller kravuppfyllnadsfrågor. Leveransen är alltid ett tydligt beslutsunderlag anpassat för att hålla inför investeringsbeslut, myndighetskrav och intern revision."
+    },
+    {
+      titel: "Planering & projektering",
+      kort: "Från förstudie till färdiga konstruktionshandlingar.",
+      detalj: "ST Engineering utför planering och projektering av ombyggnationer och uppgraderingar av industriella elkraftanläggningar. Vi hanterar hela kedjan från förstudie och systemval till detaljkonstruktion med anläggningsscheman, kretsscheman, kabellistor, förreglingsscheman och selektivplaner. Arbetet utförs i enlighet med gällande standarder (IEC, SS) och anpassas efter kundens krav och befintlig dokumentationsstruktur."
+    },
+    {
+      titel: "Tekniskt beställarstöd",
+      kort: "Oberoende stöd vid upphandling, granskning och mottagning.",
+      detalj: "Som tekniskt beställarstöd företräder vi kundens intressen genom hela projektet utan koppling till leverantörer eller entreprenörer. Tjänsten inkluderar kravställning och upprättning av förfrågningsunderlag, teknisk granskning av inkomna anbud och leverantörers handlingar, löpande leverantörsdialog samt mottagningskontroll och FAT. Tjänsten är särskilt värdefull för organisationer som saknar intern elkraftskompetens eller vill ha ett oberoende tekniskt öga."
+    },
+    {
+      titel: "Risk- & driftsäkerhetsanalys",
+      kort: "Analyser för ökad personsäkerhet och tillgänglighet.",
+      detalj: "Vi genomför risk- och driftsäkerhetsanalyser kopplade till elförsörjning och kritiska funktioner i industriella anläggningar. Uppdragen kan innefatta selektivplansanalys,  analys av skyddssamordning samt identifiering av driftskritiska svagheter. Resultatet är konkreta åtgärdsförslag som stärker personsäkerheten och ökar anläggningens tillgänglighet och motståndskraft mot störningar."
+    },
+    {
+      titel: "Dokumentation & konstruktion",
+      kort: "Korrekta handlingar för drift, investering och revision.",
+      detalj: "Korrekt och uppdaterad dokumentation är en förutsättning för säker drift och effektivt underhåll. Vi upprättar och reviderar anläggningsdokumentation, konstruktionshandlingar och rapporter anpassade efter kundens krav oavsett om det gäller relationshandlingar, tekniska beskrivningar eller beslutsunderlag för investeringar."
+    },
+    {
+      titel: "Idrifttagningsledning",
+      kort: "Strukturerad och säker driftsättning av el-anläggningar.",
+      detalj: "Idrifttagning av industriella el-anläggningar kräver noggrann planering, teknisk djupkunskap och tydligt säkerhetsansvar. ST Engineering erbjuder idrifttagningsledning för ställverk, reläskydd, transformatorer, LS-system och kontrollutrustning från 0,1 kV upp till 70 kV. Vi hanterar provning, reläkonfiguration, signalprovning och spänningssättning."
+    },
+    {
+      titel: "Inhyrd Ingenjör/Tekniker",
+      kort: "Senior kompetens direkt inbäddad i er organisation.",
+      detalj: "Behöver er organisation förstärkning under en projektfas, ett underhållsstopp eller en längre period? ST Engineering erbjuder senior elkraftskompetens som arbetar integrerat i er projekt-, underhålls- eller ingenjörsorganisation på plats eller på distans. Ni får tillgång till 17 års branscherfarenhet utan rekryteringsprocess, med full flexibilitet i uppdragets omfattning och längd. Lösningen passar organisationer som behöver tillfällig förstärkning med hög teknisk nivå, exempelvis vid investeringsprojekt eller kapacitetstoppar."
+    },
+  ],
+
+  usp: [
+    { nr:"01", titel:"Senior leverans",      text:"Hög kvalitet från första leverans utan lång upplärningsperiod." },
+    { nr:"02", titel:"Industrifokus",         text:"Praktisk förståelse för driftskritiska miljöer inom stål-, process- och energisektorn." },
+    { nr:"03", titel:"Oberoende stöd",        text:"Som beställarstöd är kundens intresse alltid i fokus, ingen koppling till leverantörer." },
+    { nr:"04", titel:"Tydlig dokumentation",  text:"Beslutsunderlag som håller för drift, investering och revision." },
+    { nr:"05", titel:"Flexibilitet",          text:"Möjlighet att ta både akuta utryckningar och planerade projekt." },
+  ],
+
+  erfarenhet_intro: "Grundaren David Stenberg har 17 års samlad erfarenhet inom elkraft och kontrollanläggning, från BAS-U och driftfrågor av vattenkraftanläggningar till komplexa industriella elkraftprojekt i stål-, gruv- och processindustrin. Han har verkat som ledande ingenjör, idrifttagningsledare, uppdragsledare och projektör , samt som projektledare för El och Automation inom industrin. Erfarenheten spänner över hela kedjan, från teknisk utredning och projektering till konstruktion, reläkonfiguration och idrifttagningsledning av anläggningar i spänningsnivåer från 0,1 kV upp till 130 kV.",
+
+  kompetenser: ["Reläskydd","Kontrollanläggning","Kortslutningsberäkningar","Idrifttagningsledning","IEC 61850 & Modbus","Ställverk 0,4–130 kV","Störningsanalys","Elkonstruktion (elMasterDesign, elPROcad)","NEPLAN nätsimulering","FEBDOK","BAS-U / BAS-P","Tekniskt beställarstöd","FAT & provning"],
+
+  kunder_rubrik: "",
+  kunder: [""],
+
+  arenden: ["Felsökning & felanalys","Teknisk utredning","Planering & projektering","Tekniskt beställarstöd","Risk- & driftsäkerhetsanalys","Idrifttagningsledning","Inhyrd Ingenjör/Tekniker","Övrigt"],
+};
+</script>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Segoe UI',system-ui,sans-serif;color:#1a1a2e;background:#fff}
+  a{text-decoration:none;color:inherit}
+  nav{position:sticky;top:0;z-index:100;background:#0d1b2a;display:flex;align-items:center;justify-content:space-between;padding:0 5%;height:68px}
+  .nav-logo{display:flex;align-items:center;gap:12px}
+  .nav-links{display:flex;gap:28px}
+  .nav-links a{color:#cdd8e3;font-size:14px;transition:color .2s}
+  .nav-links a:hover{color:#fff}
+  .nav-cta{background:#1a6fa8;color:#fff!important;padding:8px 18px;border-radius:6px;font-size:14px}
+  .hero{background:linear-gradient(135deg,#0d1b2a,#162840 60%,#1a3a5c);min-height:560px;display:flex;align-items:center;padding:80px 5%}
+  .hero-inner{max-width:680px}
+  .hero-badge{display:none}
+  .hero h1{font-size:42px;font-weight:700;color:#fff;line-height:1.2;margin-bottom:20px}
+  .hero p{font-size:17px;color:#9ab0c2;line-height:1.7;margin-bottom:36px;max-width:560px}
+  .hero-btns{display:flex;gap:14px;flex-wrap:wrap}
+  .btn-p{background:#1a6fa8;color:#fff;padding:13px 28px;border-radius:7px;font-size:15px;font-weight:500}
+  .btn-o{border:1.5px solid rgba(255,255,255,.25);color:#cdd8e3;padding:13px 28px;border-radius:7px;font-size:15px}
+  .stats{background:#f4f7fa;padding:40px 5%;display:flex;justify-content:center;gap:60px;flex-wrap:wrap;border-bottom:1px solid #e0e8f0}
+  .stat{text-align:center}
+  .stat-num{font-size:26px;font-weight:700;color:#1a6fa8}
+  .stat-label{font-size:13px;color:#6b7e8e;margin-top:4px}
+  section{padding:72px 5%}
+  .stag{font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#1a6fa8;font-weight:600;margin-bottom:10px}
+  h2{font-size:30px;font-weight:700;color:#0d1b2a;margin-bottom:14px}
+  .slead{font-size:16px;color:#4a5e6d;line-height:1.7;max-width:640px;margin-bottom:48px}
+  .grid-t{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+  .card-t{border:1px solid #dce8f0;border-radius:10px;overflow:hidden;cursor:pointer;transition:box-shadow .2s,border-color .2s}
+  .card-t:hover{box-shadow:0 4px 20px rgba(26,111,168,.12);border-color:#4a9eca}
+  .card-t.open{border-color:#1a6fa8;box-shadow:0 4px 24px rgba(26,111,168,.15)}
+  .card-head{padding:22px 22px 18px;display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+  .card-left{display:flex;align-items:flex-start;gap:14px}
+  .svc-icon{width:40px;height:40px;background:#e8f3fb;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .svc-icon svg{width:20px;height:20px;stroke:#1a6fa8;fill:none;stroke-width:1.8}
+  .card-t h3{font-size:15px;font-weight:600;color:#0d1b2a;margin-bottom:5px}
+  .card-t .kort{font-size:13.5px;color:#5a6e7e;line-height:1.5}
+  .arrow{font-size:18px;color:#aabbc8;transition:transform .25s;margin-top:2px;flex-shrink:0}
+  .card-t.open .arrow{transform:rotate(180deg);color:#1a6fa8}
+  .card-body{max-height:0;overflow:hidden;transition:max-height .35s ease}
+  .card-body.open{max-height:600px}
+  .card-body-inner{padding:0 22px 20px;border-top:1px solid #eef3f8;padding-top:16px}
+  .card-body-inner p{font-size:14px;color:#3a4e5e;line-height:1.7}
+  .usp-sec{background:#0d1b2a}
+  .usp-sec .stag{color:#4a9eca}
+  .usp-sec h2{color:#fff}
+  .usp-sec .slead{color:#8aa0b5}
+  .usp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+  .usp-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:22px}
+  .usp-card h3{font-size:15px;font-weight:600;color:#e0eaf4;margin-bottom:8px}
+  .usp-card p{font-size:13.5px;color:#7d99af;line-height:1.6}
+  .usp-num{font-size:28px;font-weight:700;color:#4a9eca;margin-bottom:10px}
+  .proc-sec{background:#f4f7fa}
+  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
+  .step{padding:24px;text-align:center;position:relative}
+  .step:not(:last-child)::after{content:'→';position:absolute;right:-10px;top:50%;transform:translateY(-50%);color:#4a9eca;font-size:22px}
+  .step-num{width:44px;height:44px;border-radius:50%;background:#1a6fa8;color:#fff;font-weight:700;font-size:16px;display:flex;align-items:center;justify-content:center;margin:0 auto 12px}
+  .step h3{font-size:14px;font-weight:600;color:#0d1b2a;margin-bottom:6px}
+  .step p{font-size:13px;color:#5a6e7e;line-height:1.5}
+  .about-inner{display:flex;align-items:flex-start;gap:48px;flex-wrap:wrap}
+  .about-text{flex:1;min-width:280px}
+  .about-text p{font-size:15px;color:#4a5e6d;line-height:1.8;margin-bottom:16px}
+  .founder-col{min-width:240px;flex:0 0 240px}
+  .founder-card{border:1px solid #dce8f0;border-radius:12px;overflow:hidden}
+  .founder-img{width:100%;height:280px;object-fit:cover;object-position:top;display:block}
+  .founder-info{padding:16px 20px}
+  .founder-info h3{font-size:16px;font-weight:600;color:#0d1b2a;margin-bottom:4px}
+  .founder-info p{font-size:13px;color:#6b7e8e}
+  .komp-grid{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+  .komp-tag{background:#e8f3fb;color:#1a5a8a;font-size:12.5px;padding:5px 12px;border-radius:20px;font-weight:500}
+  .kund-grid{display:flex;flex-wrap:wrap;gap:8px}
+  .kund-tag{background:#f0f4f8;color:#4a5e6d;font-size:12.5px;padding:5px 12px;border-radius:20px}
+  .contact-sec{background:linear-gradient(135deg,#0d1b2a,#1a3a5c);padding:72px 5%;text-align:center}
+  .contact-sec .stag{color:#4a9eca}
+  .contact-sec h2{color:#fff;margin-bottom:12px}
+  .contact-sec>p{color:#8aa0b5;font-size:16px;margin-bottom:36px}
+  .cc-row{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-bottom:36px}
+  .cc{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:20px 30px;min-width:200px}
+  .cc-lbl{font-size:12px;color:#6a8a9e;letter-spacing:1px;text-transform:uppercase;margin-bottom:6px}
+  .cc-val{font-size:15px;color:#d4e4f0;font-weight:500}
+  .cf{max-width:520px;margin:0 auto;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:32px;text-align:left}
+  .cf-title{color:#c0d4e4;font-size:15px;font-weight:500;margin-bottom:20px}
+  .cf-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
+  .cf-f{margin-bottom:12px}
+  .cf-lbl{font-size:12px;color:#6a8a9e;letter-spacing:.8px;text-transform:uppercase;display:block;margin-bottom:6px}
+  .cf-i{width:100%;padding:10px 14px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:6px;color:#e0eaf4;font-size:14px;outline:none;font-family:inherit}
+  .cf-i::placeholder{color:#4a6070}
+  .cf-btn{width:100%;padding:12px;background:#1a6fa8;color:#fff;border:none;border-radius:7px;font-size:15px;font-weight:500;cursor:pointer;margin-top:8px;transition:background .2s}
+  .cf-btn:hover{background:#1580c2}
+  footer{background:#08111c;padding:24px 5%;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+  footer p{font-size:13px;color:#4a6070}
+  @media(max-width:700px){.hero h1{font-size:28px}.stats{gap:30px}.step::after{display:none}.nav-links{display:none}.cf-row{grid-template-columns:1fr}.founder-col{flex:1 1 100%}.about-inner{flex-direction:column-reverse}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">
+    <svg width="42" height="42" viewBox="0 0 44 44" fill="none"><rect width="44" height="44" rx="8" fill="#0d1b2a"/><path d="M6 24 L11 30 L18 14" stroke="#3a9de8" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/><line x1="18" y1="14" x2="38" y2="14" stroke="#3a9de8" stroke-width="2.2" stroke-linecap="round"/><polygon points="22,18 26,24 23.5,24 27,30 19,22 22.5,22" fill="#5bc0f8"/><text x="28" y="31" font-size="13" font-weight="700" fill="white" font-family="Segoe UI,sans-serif">3</text></svg>
+    <div>
+      <div id="nav-namn" style="color:#fff;font-size:15px;font-weight:600;line-height:1.1"></div>
+      <div style="color:#4a6a82;font-size:10px;letter-spacing:.5px">ELTEKNIK OCH KONTROLLANLÄGGNING</div>
+    </div>
+  </div>
+  <div class="nav-links">
+    <a href="#tjanster">Tjänster</a>
+    <a href="#varfor">Varför oss</a>
+    <a href="#process">Arbetsprocess</a>
+    <a href="#om">Om oss</a>
+    <a href="#kontakt" class="nav-cta">Kontakt</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <h1 id="hero-rubrik"></h1>
+    <p id="hero-text"></p>
+    <div class="hero-btns">
+      <a href="#kontakt" class="btn-p">Kontakta oss</a>
+      <a href="#tjanster" class="btn-o">Se tjänster</a>
+    </div>
+  </div>
+</div>
+
+<div class="stats" id="stats-row"></div>
+
+<section id="tjanster">
+  <div class="stag">Tjänster</div>
+  <h2>Vad vi erbjuder</h2>
+  <p class="slead">Klicka på en tjänst för att läsa mer om hur vi kan hjälpa er organisation.</p>
+  <div class="grid-t" id="tjanster-grid"></div>
+</section>
+
+<section class="usp-sec" id="varfor">
+  <div class="stag">Varför ST Engineering</div>
+  <h2>Vår konkurrensfördel</h2>
+  <p class="slead">Vi konkurrerar genom senior specialistkompetens, korta ledtider och tydlig leverans varje gång.</p>
+  <div class="usp-grid" id="usp-grid"></div>
+</section>
+
+<section class="proc-sec" id="process">
+  <div class="stag">Arbetsprocess</div>
+  <h2>Så arbetar vi</h2>
+  <p class="slead">En strukturerad process som säkerställer rätt scope, tydlig leverans och nöjd kund.</p>
+  <div class="steps">
+    <div class="step"><div class="step-num">1</div><h3>Behovsanalys</h3><p>Kartläggning av scope, förutsättningar och krav</p></div>
+    <div class="step"><div class="step-num">2</div><h3>Offert & plan</h3><p>Tydlig offert med tidsplan och leveransdefinition</p></div>
+    <div class="step"><div class="step-num">3</div><h3>Genomförande</h3><p>Löpande avstämning och dokumentation</p></div>
+    <div class="step"><div class="step-num">4</div><h3>Överlämning</h3><p>Slutleverans, rapport och uppföljning</p></div>
+  </div>
+</section>
+
+<section id="om">
+  <div class="stag">Om oss</div>
+  <h2 id="om-rubrik"></h2>
+  <div class="about-inner">
+    <div class="about-text">
+      <p id="erfarenhet-intro"></p>
+      <p style="margin-top:8px;font-size:15px;color:#4a5e6d;line-height:1.8">Bolaget grundades med målet att erbjuda den typ av senior teknisk kompetens som annars är svår att hitta – tillgänglig, oberoende och med djup praktisk förståelse för industriella driftsmiljöer.</p>
+      <div style="margin-top:28px">
+        <p style="font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#1a6fa8;font-weight:600;margin-bottom:14px">Tekniska kompetenser</p>
+        <div class="komp-grid" id="komp-grid"></div>
+        <p style="font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#1a6fa8;font-weight:600;margin-bottom:14px" id="kund-rubrik-el"></p>
+        <div class="kund-grid" id="kund-grid"></div>
+      </div>
+    </div>
+    <div class="founder-col">
+      <div class="founder-card">
+        <img id="founder-img" class="founder-img" alt="Grundare">
+        <div class="founder-info">
+          <h3 id="founder-namn"></h3>
+          <p id="founder-titel"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact-sec" id="kontakt">
+  <div class="stag">Kontakt</div>
+  <h2>Redo att diskutera ditt uppdrag?</h2>
+  <p>Hör av dig så berättar vi mer om hur vi kan hjälpa er.</p>
+  <div class="cc-row" id="cc-row"></div>
+  <div class="cf">
+    <p class="cf-title">Skicka ett meddelande</p>
+    <div class="cf-row">
+      <div><label class="cf-lbl">Namn</label><input id="cf-name" class="cf-i" type="text" placeholder="Ditt namn"></div>
+      <div><label class="cf-lbl">Företag</label><input id="cf-company" class="cf-i" type="text" placeholder="Företagsnamn"></div>
+    </div>
+    <div class="cf-f"><label class="cf-lbl">E-post</label><input id="cf-email" class="cf-i" type="email" placeholder="din@email.se"></div>
+    <div class="cf-f"><label class="cf-lbl">Ärende</label><select id="cf-subject" class="cf-i" style="background:rgba(13,27,42,.9)"><option value="">Välj tjänst...</option></select></div>
+    <div class="cf-f"><label class="cf-lbl">Meddelande</label><textarea id="cf-msg" class="cf-i" rows="4" placeholder="Beskriv ditt behov kort..." style="resize:vertical"></textarea></div>
+    <button class="cf-btn" onclick="submitForm()">Skicka förfrågan</button>
+    <p id="cf-thanks" style="display:none;color:#4a9eca;font-size:14px;text-align:center;margin-top:14px">Tack! Vi återkommer inom kort.</p>
+  </div>
+</section>
+
+<footer>
+  <div style="display:flex;align-items:center;gap:10px">
+    <svg width="26" height="26" viewBox="0 0 44 44" fill="none"><rect width="44" height="44" rx="8" fill="#0d1b2a"/><path d="M6 24 L11 30 L18 14" stroke="#3a9de8" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/><line x1="18" y1="14" x2="38" y2="14" stroke="#3a9de8" stroke-width="2.2" stroke-linecap="round"/><polygon points="22,18 26,24 23.5,24 27,30 19,22 22.5,22" fill="#5bc0f8"/><text x="28" y="31" font-size="13" font-weight="700" fill="white" font-family="Segoe UI,sans-serif">3</text></svg>
+    <span id="footer-namn" style="font-size:14px;color:#4a6070"></span>
+  </div>
+  <p id="footer-orgnr"></p>
+</footer>
+
+<script>
+const icons = [
+  '<circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"/>',
+  '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/>',
+  '<polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/>',
+  '<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>',
+  '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>',
+  '<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/>',
+  '<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>',
+  '<rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>',
+];
+
+document.getElementById('nav-namn').innerHTML = 'ST <span style="color:#4a9eca">Engineering</span> AB';
+document.getElementById('footer-namn').innerHTML = 'ST <span style="color:#1a6fa8">Engineering</span> AB';
+document.getElementById('hero-rubrik').innerHTML = C.hero_rubrik;
+document.getElementById('hero-text').textContent = C.hero_text;
+document.getElementById('om-rubrik').textContent = C.foretagsnamn;
+document.getElementById('erfarenhet-intro').textContent = C.erfarenhet_intro;
+document.getElementById('founder-namn').textContent = C.grundare_namn;
+document.getElementById('founder-titel').textContent = C.grundare_titel;
+document.getElementById('founder-img').src = C.grundare_bild;
+document.getElementById('footer-orgnr').textContent = '© 2025 ' + C.foretagsnamn + ' · Org.nr: ' + C.orgnr;
+document.getElementById('kund-rubrik-el').textContent = C.kunder_rubrik;
+
+document.getElementById('stats-row').innerHTML = C.stats.map(s=>`<div class="stat"><div class="stat-num">${s.num}</div><div class="stat-label">${s.label}</div></div>`).join('');
+document.getElementById('usp-grid').innerHTML = C.usp.map(u=>`<div class="usp-card"><div class="usp-num">${u.nr}</div><h3>${u.titel}</h3><p>${u.text}</p></div>`).join('');
+document.getElementById('komp-grid').innerHTML = C.kompetenser.map(k=>`<span class="komp-tag">${k}</span>`).join('');
+document.getElementById('kund-grid').innerHTML = C.kunder.map(k=>`<span class="kund-tag">${k}</span>`).join('');
+document.getElementById('cc-row').innerHTML = [{l:'E-post',v:C.epost},{l:'Telefon',v:C.telefon},{l:'Adress',v:'Lulevägen 24<br>961 33 Boden'}].map(x=>`<div class="cc"><div class="cc-lbl">${x.l}</div><div class="cc-val">${x.v}</div></div>`).join('');
+
+const sel = document.getElementById('cf-subject');
+C.arenden.forEach(a=>{ const o=document.createElement('option'); o.textContent=a; sel.appendChild(o); });
+
+document.getElementById('tjanster-grid').innerHTML = C.tjanster.map((t,i)=>`
+  <div class="card-t" onclick="toggleCard(this)">
+    <div class="card-head">
+      <div class="card-left">
+        <div class="svc-icon"><svg viewBox="0 0 24 24">${icons[i]||icons[0]}</svg></div>
+        <div><h3>${t.titel}</h3><p class="kort">${t.kort}</p></div>
+      </div>
+      <div class="arrow">▾</div>
+    </div>
+    <div class="card-body">
+      <div class="card-body-inner"><p>${t.detalj}</p></div>
+    </div>
+  </div>`).join('');
+
+function toggleCard(card){
+  const body = card.querySelector('.card-body');
+  const isOpen = card.classList.contains('open');
+  document.querySelectorAll('.card-t.open').forEach(c=>{
+    c.classList.remove('open');
+    c.querySelector('.card-body').classList.remove('open');
+  });
+  if(!isOpen){ card.classList.add('open'); body.classList.add('open'); }
+}
+
+function submitForm(){
+  const n=document.getElementById('cf-name').value;
+  const e=document.getElementById('cf-email').value;
+  if(!n||!e){alert('Fyll i namn och e-post.');return;}
+  document.getElementById('cf-thanks').style.display='block';
+  ['cf-name','cf-company','cf-email','cf-msg'].forEach(id=>document.getElementById(id).value='');
+  document.getElementById('cf-subject').selectedIndex=0;
+}
+</script>
+</body>
+</html>

@@ -73,12 +73,16 @@ const C = {
   .nav-links a:hover{color:#fff}
   .nav-cta{background:#1a6fa8;color:#fff!important;padding:8px 18px;border-radius:6px;font-size:14px}
   .hero{background:linear-gradient(135deg,#0d1b2a,#162840 60%,#1a3a5c);min-height:560px;display:flex;align-items:center;padding:80px 5%}
-  .hero-inner{max-width:680px}
+  .hero-wrap{display:flex;align-items:center;justify-content:space-between;gap:48px;width:100%}
+  .hero-inner{max-width:580px}
   .hero h1{font-size:42px;font-weight:700;color:#fff;line-height:1.2;margin-bottom:20px}
-  .hero p{font-size:17px;color:#9ab0c2;line-height:1.7;margin-bottom:36px;max-width:560px}
+  .hero p{font-size:17px;color:#9ab0c2;line-height:1.7;margin-bottom:36px;max-width:520px}
   .hero-btns{display:flex;gap:14px;flex-wrap:wrap}
   .btn-p{background:#1a6fa8;color:#fff;padding:13px 28px;border-radius:7px;font-size:15px;font-weight:500}
   .btn-o{border:1.5px solid rgba(255,255,255,.25);color:#cdd8e3;padding:13px 28px;border-radius:7px;font-size:15px}
+  /* Diagram */
+  .hero-diagram{flex-shrink:0;width:520px;height:340px}
+  @media(max-width:1100px){.hero-diagram{display:none}}
   .stats{background:#f4f7fa;padding:40px 5%;display:flex;justify-content:center;gap:60px;flex-wrap:wrap;border-bottom:1px solid #e0e8f0}
   .stat{text-align:center}
   .stat-num{font-size:26px;font-weight:700;color:#1a6fa8}
@@ -132,8 +136,6 @@ const C = {
   .komp-tag{background:#e8f3fb;color:#1a5a8a;font-size:12.5px;padding:5px 12px;border-radius:20px;font-weight:500}
   .kund-grid{display:flex;flex-wrap:wrap;gap:8px}
   .kund-tag{background:#f0f4f8;color:#4a5e6d;font-size:12.5px;padding:5px 12px;border-radius:20px}
-
-  /* KONTAKT */
   .contact-sec{background:#f4f7fa;padding:0}
   .contact-hero{background:linear-gradient(135deg,#0d1b2a,#1a3a5c);padding:60px 5%;text-align:left}
   .contact-hero h2{color:#fff;font-size:32px;font-weight:700;margin-bottom:10px}
@@ -142,39 +144,11 @@ const C = {
   .loc-tab{padding:18px 40px;font-size:15px;font-weight:600;color:rgba(255,255,255,.7);cursor:pointer;border-bottom:3px solid transparent;transition:all .2s}
   .loc-tab.active{background:#0d1b2a;color:#fff;border-bottom:3px solid #4a9eca}
   .loc-content{background:#fff;padding:48px 5%;display:flex;gap:40px;flex-wrap:wrap;align-items:flex-start}
-  .loc-info{flex:1;min-width:280px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;border:1px solid #e0e8f0;border-radius:2px}
-  .loc-col{padding:32px 28px;text-align:center;border-right:1px solid #e0e8f0}
-  .loc-col:last-child{border-right:none}
-  .loc-col-lbl{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#1a6fa8;font-weight:700;margin-bottom:16px}
-  .loc-col p{font-size:14px;color:#3a4e5e;line-height:1.8}
-  .loc-map{flex:1;min-width:280px;min-height:320px;border-radius:4px;overflow:hidden;border:1px solid #e0e8f0}
-  .loc-map iframe{width:100%;height:100%;min-height:320px;border:none;display:block}
-
-  /* PERSONAL KORT */
-  .personal-sec{background:#f4f7fa;padding:48px 5%}
-  .personal-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1px;background:#e0e8f0;border:1px solid #e0e8f0;border-radius:2px;overflow:hidden}
-  .personal-card{background:#fff;padding:36px 28px;text-align:center}
-  .personal-card h3{font-size:17px;font-weight:700;color:#0d1b2a;margin-bottom:6px}
-  .personal-card .roll{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#1a6fa8;font-weight:700;margin-bottom:20px}
-  .personal-card p{font-size:14px;color:#4a5e6d;margin-bottom:4px}
-
-  .cf-wrap{background:#0d1b2a;padding:56px 5%}
-  .cf{max-width:520px;margin:0 auto;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:32px;text-align:left}
-  .cf-title{color:#c0d4e4;font-size:15px;font-weight:500;margin-bottom:20px}
-  .cf-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
-  .cf-f{margin-bottom:12px}
-  .cf-lbl{font-size:12px;color:#6a8a9e;letter-spacing:.8px;text-transform:uppercase;display:block;margin-bottom:6px}
-  .cf-i{width:100%;padding:10px 14px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:6px;color:#e0eaf4;font-size:14px;outline:none;font-family:inherit}
-  .cf-i::placeholder{color:#4a6070}
-  .cf-btn{width:100%;padding:12px;background:#1a6fa8;color:#fff;border:none;border-radius:7px;font-size:15px;font-weight:500;cursor:pointer;margin-top:8px;transition:background .2s}
-  .cf-btn:hover{background:#1580c2}
   footer{background:#08111c;padding:24px 5%;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
   footer p{font-size:13px;color:#4a6070}
   @media(max-width:700px){
     .hero h1{font-size:28px}.stats{gap:30px}.step::after{display:none}.nav-links{display:none}
-    .cf-row{grid-template-columns:1fr}.founder-col{flex:1 1 100%}.about-inner{flex-direction:column-reverse}
-    .loc-info{grid-template-columns:1fr}.loc-col{border-right:none;border-bottom:1px solid #e0e8f0}
-    .loc-col:last-child{border-bottom:none}
+    .founder-col{flex:1 1 100%}.about-inner{flex-direction:column-reverse}
   }
 </style>
 </head>
@@ -198,12 +172,66 @@ const C = {
 </nav>
 
 <div class="hero">
-  <div class="hero-inner">
-    <h1 id="hero-rubrik"></h1>
-    <p id="hero-text"></p>
-    <div class="hero-btns">
-      <a href="#kontakt" class="btn-p">Kontakta oss</a>
-      <a href="#tjanster" class="btn-o">Se tjänster</a>
+  <div class="hero-wrap">
+    <div class="hero-inner">
+      <h1 id="hero-rubrik"></h1>
+      <p id="hero-text"></p>
+      <div class="hero-btns">
+        <a href="#kontakt" class="btn-p">Kontakta oss</a>
+        <a href="#tjanster" class="btn-o">Se tjänster</a>
+      </div>
+    </div>
+
+    <!-- 3-fas animerat diagram -->
+    <div class="hero-diagram">
+      <svg viewBox="0 0 520 340" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+        <defs>
+          <pattern id="grid" width="52" height="34" patternUnits="userSpaceOnUse">
+            <path d="M 52 0 L 0 0 0 34" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+          </pattern>
+          <filter id="glow-w">
+            <feGaussianBlur stdDeviation="3" result="blur"/>
+            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+          <filter id="glow-y">
+            <feGaussianBlur stdDeviation="3" result="blur"/>
+            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+          <filter id="glow-g">
+            <feGaussianBlur stdDeviation="3" result="blur"/>
+            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
+        <!-- Bakgrund transparent, grid subtilt -->
+        <rect width="520" height="340" fill="url(#grid)"/>
+        <!-- Axlar -->
+        <line x1="24" y1="170" x2="506" y2="170" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+        <line x1="24" y1="12" x2="24" y2="328" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+        <!-- Skalstreck Y -->
+        <line x1="20" y1="50" x2="28" y2="50" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+        <line x1="20" y1="290" x2="28" y2="290" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+        <text x="4" y="54" fill="rgba(255,255,255,0.3)" font-size="9" font-family="monospace">+</text>
+        <text x="4" y="294" fill="rgba(255,255,255,0.3)" font-size="9" font-family="monospace">–</text>
+        <!-- Etiketter -->
+        <text x="30" y="14" fill="rgba(255,255,255,0.35)" font-size="10" font-family="monospace">U (kV)</text>
+        <text x="488" y="184" fill="rgba(255,255,255,0.35)" font-size="10" font-family="monospace">t</text>
+        <!-- Sinuskurvor -->
+        <path id="wave1" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" filter="url(#glow-w)"/>
+        <path id="wave2" fill="none" stroke="#f0a500" stroke-width="2.2" stroke-linecap="round" filter="url(#glow-y)" opacity="0.9"/>
+        <path id="wave3" fill="none" stroke="#4acf8a" stroke-width="2.2" stroke-linecap="round" filter="url(#glow-g)" opacity="0.9"/>
+        <!-- Prickar vid vågfront -->
+        <circle id="dot1" r="5" fill="#ffffff" filter="url(#glow-w)"/>
+        <circle id="dot2" r="5" fill="#f0a500" filter="url(#glow-y)" opacity="0.9"/>
+        <circle id="dot3" r="5" fill="#4acf8a" filter="url(#glow-g)" opacity="0.9"/>
+        <!-- Legend -->
+        <circle cx="34" cy="326" r="5" fill="#ffffff"/>
+        <text x="44" y="330" fill="rgba(255,255,255,0.6)" font-size="10" font-family="monospace">L1</text>
+        <circle cx="80" cy="326" r="5" fill="#f0a500"/>
+        <text x="90" y="330" fill="rgba(255,255,255,0.6)" font-size="10" font-family="monospace">L2</text>
+        <circle cx="126" cy="326" r="5" fill="#4acf8a"/>
+        <text x="136" y="330" fill="rgba(255,255,255,0.6)" font-size="10" font-family="monospace">L3</text>
+        <text x="370" y="330" fill="rgba(255,255,255,0.3)" font-size="10" font-family="monospace">50 Hz · 3-fas</text>
+      </svg>
     </div>
   </div>
 </div>
@@ -262,18 +290,15 @@ const C = {
   </div>
 </section>
 
-<!-- KONTAKT -->
 <div class="contact-sec" id="kontakt">
   <div class="contact-hero">
     <div class="stag" style="color:#4a9eca">Kontakt</div>
     <h2>Kontakta oss</h2>
     <p>Här hittar du vår kontaktperson. Vi är bara ett mail eller telefonsamtal bort.</p>
   </div>
-
   <div class="loc-tabs">
     <div class="loc-tab active">Boden</div>
   </div>
-
   <div class="loc-content" style="flex-direction:column">
     <div style="width:100%;display:flex;gap:40px;flex-wrap:wrap;margin-bottom:32px">
       <div style="flex:1;min-width:240px">
@@ -330,8 +355,6 @@ document.getElementById('usp-grid').innerHTML = C.usp.map(u=>`<div class="usp-ca
 document.getElementById('komp-grid').innerHTML = C.kompetenser.map(k=>`<span class="komp-tag">${k}</span>`).join('');
 document.getElementById('kund-grid').innerHTML = C.kunder.map(k=>`<span class="kund-tag">${k}</span>`).join('');
 
-
-
 document.getElementById('tjanster-grid').innerHTML = C.tjanster.map((t,i)=>`
   <div class="card-t" onclick="toggleCard(this)">
     <div class="card-head">
@@ -353,14 +376,28 @@ function toggleCard(card){
   if(!isOpen){card.classList.add('open');body.classList.add('open');}
 }
 
-function submitForm(){
-  const n=document.getElementById('cf-name').value;
-  const e=document.getElementById('cf-email').value;
-  if(!n||!e){alert('Fyll i namn och e-post.');return;}
-  document.getElementById('cf-thanks').style.display='block';
-  ['cf-name','cf-company','cf-email','cf-msg'].forEach(id=>document.getElementById(id).value='');
-  document.getElementById('cf-subject').selectedIndex=0;
+// 3-fas sinusanimation
+const w1=document.getElementById('wave1'),w2=document.getElementById('wave2'),w3=document.getElementById('wave3');
+const d1=document.getElementById('dot1'),d2=document.getElementById('dot2'),d3=document.getElementById('dot3');
+let t=0;
+function animateWave(){
+  t+=0.025;
+  const pts1=[],pts2=[],pts3=[];
+  for(let x=24;x<=506;x+=2){
+    const p=(x-24)/482;
+    pts1.push(`${x===24?'M':'L'}${x},${170-110*Math.sin(p*4*Math.PI+t)}`);
+    pts2.push(`${x===24?'M':'L'}${x},${170-110*Math.sin(p*4*Math.PI+t+2.094)}`);
+    pts3.push(`${x===24?'M':'L'}${x},${170-110*Math.sin(p*4*Math.PI+t+4.189)}`);
+  }
+  w1.setAttribute('d',pts1.join(' '));
+  w2.setAttribute('d',pts2.join(' '));
+  w3.setAttribute('d',pts3.join(' '));
+  d1.setAttribute('cx',506); d1.setAttribute('cy',170-110*Math.sin(4*Math.PI+t));
+  d2.setAttribute('cx',506); d2.setAttribute('cy',170-110*Math.sin(4*Math.PI+t+2.094));
+  d3.setAttribute('cx',506); d3.setAttribute('cy',170-110*Math.sin(4*Math.PI+t+4.189));
+  requestAnimationFrame(animateWave);
 }
+animateWave();
 </script>
 </body>
 </html>
